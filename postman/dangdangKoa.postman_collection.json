@@ -1,0 +1,62 @@
+{
+	"info": {
+		"_postman_id": "4e7ddf17-bad2-43ac-a08c-93b143dff60e",
+		"name": "dangdangKoa",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "8272765"
+	},
+	"item": [
+		{
+			"name": "find userinfo",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3002/dang/usermodule/findUserinfo/dodo",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3002",
+					"path": [
+						"dang",
+						"usermodule",
+						"findUserinfo",
+						"dodo"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "add user",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"username\": \"bobo\",\n    \"psw\": \"123\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3002/dang/usermodule/addUser",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3002",
+					"path": [
+						"dang",
+						"usermodule",
+						"addUser"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
