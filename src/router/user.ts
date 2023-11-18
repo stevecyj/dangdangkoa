@@ -9,4 +9,10 @@ router.get("/findUserinfo/:username", async (ctx: Context) => {
   ctx.body = `hello ${username}`;
 });
 
+router.post("/addUser", async (ctx: Context) => {
+  const user = ctx.request.body;
+  console.log(user);
+  ctx.body = `hello ${user.username}`;
+});
+
 export default router;
