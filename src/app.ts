@@ -2,6 +2,7 @@ import Koa from "koa";
 import body from "koa-body";
 import json from "koa-json";
 import Router from "koa-router";
+import userRouter from "./router/user";
 
 const app = new Koa();
 const router = new Router();
@@ -10,8 +11,11 @@ router.prefix("/dang"); // 路由前缀
 router.get("/test", async (ctx: Koa.Context, _next: Koa.Next) => {
   ctx.body = "hello world";
 });
+
 router.use(json());
 router.use(body());
+
+router.use(userRouter.routes(), userRouter.allowedMethods());
 
 app.use(router.routes());
 app.listen(3002);
