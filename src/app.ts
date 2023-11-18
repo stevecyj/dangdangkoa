@@ -7,7 +7,7 @@ const app = new Koa();
 const router = new Router();
 router.prefix("/dang"); // 路由前缀
 
-router.get("/test", async (ctx: Koa.Context) => {
+router.get("/test", async (ctx: Koa.Context, _next: Koa.Next) => {
   ctx.body = "hello world";
 });
 router.use(json());
