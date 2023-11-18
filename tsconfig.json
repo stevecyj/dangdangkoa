@@ -31,7 +31,7 @@
     "paths": {
       "@/*": ["src/*"]
     },
-    "types": ["vite/client"],
+    "types": ["node"],
     "allowSyntheticDefaultImports": true,
     "forceConsistentCasingInFileNames": true /* Ensure that casing is correct in imports. */
   },
