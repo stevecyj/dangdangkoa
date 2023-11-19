@@ -3,8 +3,10 @@ import body from "koa-body";
 import json from "koa-json";
 import Router from "koa-router";
 import userRouter from "./router/user";
+import allRouterLoader from "./common/AllRouterLoader";
 
 const app = new Koa();
+allRouterLoader.init();
 const router = new Router();
 router.prefix("/dang"); // 路由前缀
 
