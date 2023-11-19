@@ -1,3 +1,10 @@
+## npm dependencies
+
+```bash
+npm install -S @types/jsonwebtoken @types/koa @types/koa-json @types/koa-router @types/lodash @types/mysql jsonwebtoken koa koa-body koa-json koa-router log4js mysql nodemon reflect-metadata sequelize sequelize-typescript ts-node typescript
+
+```
+
 ## secondary router
 
 ```JS
