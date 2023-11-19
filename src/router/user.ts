@@ -15,4 +15,4 @@ router.post("/addUser", async (ctx: Context) => {
   ctx.body = `hello ${user.username}`;
 });
 
-export default router;
+module.exports = router;
